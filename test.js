@@ -15,5 +15,8 @@ describe('String Calculator', () => {
   test('returns sum for two numbers separated by comma', () => {
     expect(stringCalculator.add('1,2')).equal(3);
   });
-  
+
+  test('handles multiple numbers', () => {
+    expect(stringCalculator.add('1,2,3,4')).equal(10);
+  });
 });
