@@ -23,5 +23,8 @@ describe('String Calculator', () => {
   test('handles new lines between numbers', () => {
     expect(stringCalculator.add('1\n2,3')).equal(6);
   });
-  
+
+  test('supports different delimiters', () => {
+    expect(stringCalculator.add('//;\n1;2')).equal(3);
+  });
 });
