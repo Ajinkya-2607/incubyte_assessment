@@ -7,4 +7,9 @@ describe('String Calculator', () => {
   test('returns 0 for an empty string', () => {
     expect(stringCalculator.add('')).equal(0);
   });
+
+  test('returns number for a single number string', () => {
+    expect(stringCalculator.add('1')).equal(1);
+  });
+  
 });
