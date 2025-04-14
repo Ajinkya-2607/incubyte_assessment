@@ -19,4 +19,9 @@ describe('String Calculator', () => {
   test('handles multiple numbers', () => {
     expect(stringCalculator.add('1,2,3,4')).equal(10);
   });
+
+  test('handles new lines between numbers', () => {
+    expect(stringCalculator.add('1\n2,3')).equal(6);
+  });
+  
 });
